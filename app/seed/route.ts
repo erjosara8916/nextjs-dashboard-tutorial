@@ -3,6 +3,7 @@ import postgres from "postgres";
 import { customers, invoices, revenue, users } from "../lib/placeholder-data";
 
 const sql = postgres(process.env.DB_POSTGRES_URL!, { ssl: "require" });
+console.log("Database connection established.", process.env.DB_POSTGRES_URL);
 
 async function seedUsers() {
   await sql`CREATE EXTENSION IF NOT EXISTS "uuid-ossp"`;

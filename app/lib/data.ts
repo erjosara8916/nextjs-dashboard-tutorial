@@ -10,7 +10,7 @@ import {
 import { formatCurrency } from "./utils";
 
 const sql = postgres(process.env.DB_POSTGRES_URL!, { ssl: "require" });
-
+console.log("Database connection established.", process.env.DB_POSTGRES_URL);
 export async function fetchRevenue() {
   try {
     // Artificially delay a response for demo purposes.
