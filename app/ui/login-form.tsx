@@ -9,7 +9,7 @@ import {
 } from '@heroicons/react/24/outline';
 import { useSearchParams } from 'next/navigation';
 import { useActionState } from 'react';
-import { authenticate } from '../lib/actions';
+import { authenticate } from '../lib/actions/authenticate';
 import { Button } from './button';
 
 export default function LoginForm() {
