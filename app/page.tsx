@@ -4,9 +4,21 @@ import Link from 'next/link';
 
 import Image from 'next/image';
 
-import styles from '@/app/ui/home.module.css'
+import styles from '@/app/ui/home.module.css';
 
 import { lusitana } from '@/app/ui/fonts';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Home',
+  authors: [
+    {
+      name: 'Erick Saravia',
+    }
+  ],
+  creator: 'Erick Saravia',
+  keywords: ['Nextjs', 'React', 'JavaScript', 'dashboard'],
+}
 
 export default function Page() {
   return (
