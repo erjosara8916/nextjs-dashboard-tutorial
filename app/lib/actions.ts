@@ -33,7 +33,6 @@ export type State = {
 };
 
 const CreateInvoice = FormSchema.omit({ id: true, date: true });
-const UpdateInvoice = FormSchema.omit({ id: true, date: true });
 
 export async function createInvoice(prevState: State, form: FormData) {
   const validatedFields = CreateInvoice.safeParse({
