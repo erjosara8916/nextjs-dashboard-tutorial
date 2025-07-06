@@ -1,7 +1,7 @@
 'use client';
 import { createInvoice } from '@/app/lib/actions/createInvoice';
 import { State } from '@/app/lib/actions/types';
-import { CustomerField } from '@/app/lib/definitions';
+import { CustomerField } from '@/app/lib/domain/definitions';
 import { Button } from '@/app/ui/button';
 import {
   CheckIcon,

@@ -1,6 +1,6 @@
 import {
   FormattedCustomersTable,
-} from '@/app/lib/definitions';
+} from '@/app/lib/domain/definitions';
 import { lusitana } from '@/app/ui/fonts';
 import Search from '@/app/ui/search';
 import Image from 'next/image';
